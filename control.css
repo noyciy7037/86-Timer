@@ -1,0 +1,164 @@
+body {
+    background-color: #002569;
+    color: white;
+}
+
+.timer_box {
+    background-image: url("control.svg");
+    background-size: contain;
+    width: 90vw;
+    height: 20vw;
+    margin: auto;
+    margin-top: 5vw;
+}
+
+.text_re_time {
+    position: absolute;
+    color: orange;
+    font-family: "heebo";
+    font-size: 2vw;
+    margin-top: 4.4vw;
+    margin-left: 2.9vw;
+}
+
+.text_time {
+    position: absolute;
+    color: #f6ffa6;
+    margin-top: 7.5vw;
+    margin-left: 11vw;
+    font-size: 7.3vw;
+    font-family: "seven-seg";
+    z-index: 2;
+}
+
+.color_down {
+    color: #cbe6ff;
+}
+
+.seg_back {
+    color: rgba(255, 255, 255, 0.13);
+    z-index: 1;
+}
+
+.text_time_t {
+    color: #f6ffa6;
+    font-family: "heebo";
+    margin-top: 4.5vw;
+    margin-left: 2vw;
+    font-size: 10vw;
+    transform: scale(0.7, 1);
+    position: absolute;
+}
+
+.text_time_pm {
+    color: #f6ffa6;
+    font-family: "heebo";
+    margin-top: 6.7vw;
+    margin-left: 6.4vw;
+    font-size: 7vw;
+    position: absolute;
+}
+
+.text_setting {
+    color: rgba(255, 255, 255, 0.2);
+    font-family: "heebo";
+    margin-top: 4vw;
+    margin-left: 64vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    position: absolute;
+}
+
+.text_stop {
+    color: rgba(255, 255, 255, 0.2);
+    font-family: "heebo";
+    margin-top: 4vw;
+    margin-left: 77vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    position: absolute;
+}
+
+.text_count {
+    color: orange;
+    font-family: "heebo";
+    margin-top: 6.8vw;
+    margin-left: 64vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    position: absolute;
+}
+
+.text_ud {
+    color: rgba(255, 255, 255, 0.2);
+    font-family: "heebo";
+    margin-top: 6.8vw;
+    margin-left: 74.5vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    position: absolute;
+}
+
+.text_tr_time {
+    color: orange;
+    font-family: "heebo";
+    margin-top: 9.6vw;
+    margin-left: 64vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    position: absolute;
+}
+
+.text_now_time {
+    color: #f6ffa6;
+    font-family: "heebo";
+    margin-top: 12.4vw;
+    margin-left: 64vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    position: absolute;
+}
+
+.text_enable {
+    color: orange;
+}
+
+.setting {
+    width: 60vw;
+    height: 70vh;
+    margin: 0 15vw;
+    font-weight: bold;
+    font-size: 5vmin;
+    position: absolute;
+    background-color: #002569;
+    z-index: 3;
+    border: solid;
+}
+
+.ok {
+    margin-left: 5vw;
+}
+
+.hide {
+    display: none;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+a:hover{
+    color: yellow;
+}
+
+@font-face {
+    font-family: 'seven-seg';
+    src: url('./fonts/dseg/classic7/regular.woff') format('woff'),
+        url('./fonts/dseg/classic7/regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'heebo';
+    src: url('./fonts/heebo/heebo.ttf') format('truetype');
+}

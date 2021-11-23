@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>86 Timer - Control</title>
+    <link rel="stylesheet" href="control.css">
+    <script src="control.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <div class="timer_box" id="box">
+        <div class="text_re_time">REMAINING TIME</div>
+        <div class="text_time_t">T</div>
+        <div class="text_time_pm" id="pm">−</div>
+        <div class="text_time" id="time">00:00:00:00</div>
+        <div class="text_time seg_back">88:88:88:88</div>
+        <div class="text_setting" id="setting">SETTING</div>
+        <div class="text_stop" id="stop">STOP</div>
+        <div class="text_count">COUNT</div>
+        <div class="text_ud"><span class="" id="up">UP</span>/<span class="text_enable" id="down">DOWN</span></div>
+        <div class="text_tr_time" id="time_tr">1/1/2000 - 00:00:00</div>
+        <div class="text_now_time" id="time_now">1/1/2000 - 00:00:00</div>
+        <audio muted id="audio">
+            <source src="sound.mp3">
+            <source src="sound.wav">
+        </audio>
+        <div class="setting hide" id="w_setting">
+            <form id="setting_form" method="" action="" onsubmit="clickSubmitSetting();return false;">
+                <label for="trDate">Target date:</label>
+                <input type="date" class="input" id="trDate" required pattern="\d{4}-\d{2}-\d{2}"><br>
+                <label for="trTime">Target time:</label>
+                <input type="time" class="input" id="trTime" required step="1"><br>
+                <input type="reset" onclick="settingCancel()">
+                <input type="submit" class="ok" value="OK">
+            </form><br>
+            <input type="text" id="frameUrl" name="frameUrl" value="" disabled> <a id="frameLink" href="airframe.html">Open Airframe</a>
+        </div>
+    </div>
+</body>
+
+</html>

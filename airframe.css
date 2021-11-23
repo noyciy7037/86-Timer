@@ -1,0 +1,56 @@
+body {
+    background-color: #000000e5;
+    color: white;
+}
+
+.timer_box {
+    background-image: url("airframe.svg");
+    background-size: contain;
+    width: 90vw;
+    height: 20vw;
+    margin: auto;
+    margin-top: 5vw;
+}
+
+.text_time_t {
+    color: yellow;
+    font-family: "heebo";
+    margin-left: 1vw;
+    font-size: 18vw;
+    transform: scale(0.7, 1) translate(0, -2.5vw);
+    position: absolute;
+}
+
+.text_time_pm {
+    color: yellow;
+    font-family: "heebo";
+    margin-left: 8vw;
+    font-size: 14vw;
+    position: absolute;
+}
+
+.text_time {
+    position: absolute;
+    color: yellow;
+    margin-top: 4.5vw;
+    margin-left: 17vw;
+    font-size: 10vw;
+    font-family: "seven-seg";
+    z-index: 2;
+}
+
+.seg_back {
+    color: rgba(255, 255, 255, 0.13);
+    z-index: 1;
+}
+
+@font-face {
+    font-family: 'seven-seg';
+    src: url('./fonts/dseg/classic7/regular.woff') format('woff'),
+        url('./fonts/dseg/classic7/regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'heebo';
+    src: url('./fonts/heebo/heebo.ttf') format('truetype');
+}
